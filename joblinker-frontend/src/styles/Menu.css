@@ -1,0 +1,10 @@
+.menu {
+    background-color: #23133D;
+    width: 497px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+
+}
