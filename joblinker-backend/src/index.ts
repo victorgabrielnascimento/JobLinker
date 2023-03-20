@@ -4,16 +4,11 @@ import "reflect-metadata";
 import express, { Request, Response, Express } from "express";
 
 
-// import { SeguradoraRouter } from './routes/seguradora.routes';
-// import { UsuarioRouter } from './routes/usuario.routes';
-// import { VeiculoRouter } from './routes/veiculo.routes';
-// import { SinistroRouter } from "./routes/sinistro.routes";
 
 //connection
 const app: Express = express();
 
 app.use(express.json());
-// app.use(SeguradoraRouter, UsuarioRouter, VeiculoRouter, SinistroRouter);
 
 
 
