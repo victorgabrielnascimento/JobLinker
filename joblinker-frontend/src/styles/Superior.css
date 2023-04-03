@@ -1,0 +1,10 @@
+.superior {
+    position: absolute;
+    top: 0;
+   }
+   .logo-sup {
+       position: absolute;
+       top: 0;
+       z-index: 1;
+       left: 0;
+   }
