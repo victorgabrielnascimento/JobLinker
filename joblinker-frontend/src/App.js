@@ -19,7 +19,6 @@ function App() {
           <Route path="/perfilcandidato" element={<PerfilCandidato/>}></Route>
         </Routes>
       <Menu></Menu>
-        
       </Router>
     </div>
   );
