@@ -1,17 +1,18 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import '../styles/Match.css'
-import Menu from './Menu'
+import '../styles/Match.css';
+
 function Match() {
 return (
     <>
     <div className='match'>
-     <div className='logo-empresa'>JobLinker <img src="../../files/icon-work-purple.svg" alt="" /></div>
-     <Card className='card-candidato' style={{ width: '23rem', height: '30rem'}}>
+     <Card className='card-candidato' style={{ width: '22rem'}}>
       <Card.Body>
         <Card.Title>
-            <span className='name-user'>Jair Bolsonaro</span>
-            <img className='img-user' src="../../files/bolsonaro.png" alt="" />
+            <span className='name-user'>User Name</span>
+            <div className='img-user'>
+              <img src="" alt="" />
+            </div>
         </Card.Title>
         <Card.Text>
           <div>Formação acadêmica</div>
@@ -31,7 +32,6 @@ return (
         <Button variant="link"><img src="../../files/recusar.png" alt="" /></Button>
         <Button variant="link"><img src="../../files/aceitar.png" alt="" /> </Button>
         </div>
-        <Menu></Menu>
     </div>
     </>
 )
