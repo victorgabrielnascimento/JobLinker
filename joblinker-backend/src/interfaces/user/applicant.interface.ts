@@ -1,3 +1,5 @@
+import { Model } from 'sequelize';
+
 import { IUser } from "./user.interface";
 
 interface ICertification {
@@ -30,4 +32,6 @@ interface IApplicant extends IUser {
     max_likes: number;
 }
 
-export { IApplicant, ICertification, IExperiency };
+interface ApplicantInstance extends Model<IApplicant>, IApplicant {}
+
+export { IApplicant, ApplicantInstance, ICertification, IExperiency };

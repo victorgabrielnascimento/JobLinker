@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-import { IUser } from "../interfaces/user/user.interface";
-import {  IApplicant } from "../interfaces/user/applicant.interface";
-import {  ICompany } from "../interfaces/user/company.interface";
+import { IUser } from "../../interfaces/user/user.interface";
+import { IApplicant } from "../../interfaces/user/applicant.interface";
+import { ICompany } from "../../interfaces/user/company.interface";
 
 const IAdress = require ("../interfaces/user/adress.interface");
 const ICertification = require("../interfaces/user/applicant.interface");

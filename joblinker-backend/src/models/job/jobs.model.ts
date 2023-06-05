@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-import { IJob } from "../interfaces/job.interface";
+import { IJob } from "../../interfaces/job.interface";
 
 const Job: IJob = mongoose.model('job', {
     titulo: String,

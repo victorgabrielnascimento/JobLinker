@@ -18,8 +18,11 @@
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.1",
+    "mysql2": "^3.3.3",
     "node-fetch": "^2.6.7",
     "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.31.1",
+    "sequelize-typescript": "^2.1.5",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

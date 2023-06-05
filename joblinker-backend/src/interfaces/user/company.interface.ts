@@ -1,3 +1,5 @@
+import { Model } from 'sequelize';
+
 import { IUser } from "./user.interface";
 // import { uuid } from "uuidv4";
 
@@ -8,4 +10,6 @@ interface ICompany extends IUser {
     matches: string[]; //uuid das pessoas
 }
 
-export { ICompany };
+interface CompanyInstance extends Model<ICompany>, ICompany {}
+
+export { ICompany, CompanyInstance };

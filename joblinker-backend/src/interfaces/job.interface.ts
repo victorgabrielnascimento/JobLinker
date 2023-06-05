@@ -1,3 +1,5 @@
+import { Model } from 'sequelize';
+
 interface IJob {
     _id?: string;
     titulo: string;
@@ -9,5 +11,6 @@ interface IJob {
     jornada_trabalho: string;
     data_cadastro: Date;
 }
+interface JobInstance extends Model<IJob>, IJob {}
 
-export { IJob };
+export { IJob, JobInstance };
