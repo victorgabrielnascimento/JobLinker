@@ -1,15 +1,12 @@
-// mongoose connection
-const mongoose = require('mongoose');
+import { Sequelize } from 'sequelize';
 require('dotenv').config();
 
-const db = 
-    mongoose.connect(
-        `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.xjkaavs.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`
-    ).then(() => {
-        console.log('Connected to Mongo Atlas!')
-    })
-    .catch((err: string) => console.log(err));
-    
+const sequelize: Sequelize = new Sequelize({
+  database: process.env.DB_NAME,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  host: process.env.DB_HOST,
+  dialect: 'mysql',
+});
 
-module.exports = db
-export {}
+export default sequelize;
