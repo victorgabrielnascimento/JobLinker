@@ -26,6 +26,16 @@ function Menu() {
                         <Link to="/perfilcandidato"><img src="../../files/icon-user.svg" alt="" /></Link>
                     </Button>
                 </Nav.Item>
+                <Nav.Item>
+                    <Button variant="link">
+                        <Link to="/login">Login</Link>
+                    </Button>
+                </Nav.Item>
+                <Nav.Item>
+                    <Button variant="link">
+                        <Link to="/cadastro">Cadastro</Link>
+                    </Button>
+                </Nav.Item>
             </Nav>
         </div> 
     </div>
