@@ -1,4 +1,4 @@
-// @/index.ts -> server-application load
+// @/server.ts -> server-application load
 require('dotenv').config();
 import "reflect-metadata";
 
@@ -16,7 +16,7 @@ app.use(CompanyRouter);
 app.use(ManagementRouter);
 
 //db connection
-(async () => { await require('./models/index').sequelize.sync(); })();
+(async () => { await require('./app/models/index').sequelize.sync(); })();
 
 //home request
 app.get("/", (req: Request, res: Response): Response => {
