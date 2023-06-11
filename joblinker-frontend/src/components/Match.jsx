@@ -9,9 +9,9 @@ return (
      <Card className='card-candidato' style={{ width: '22rem'}}>
       <Card.Body>
         <Card.Title>
-            <span className='name-user'>User Name</span>
+            <span className='name-user w-100'>User Name</span>
             <div className='img-user'>
-              <img src="" alt="" />
+              <img src="../../files/a.png" alt="" />
             </div>
         </Card.Title>
         <Card.Text>
@@ -30,6 +30,7 @@ return (
     </Card>
         <div className="btn-match">
         <Button variant="link"><img src="../../files/recusar.png" alt="" /></Button>
+        <Button className="super-like" variant="link"><img src="../../files/superlike.png" alt="" /></Button>
         <Button variant="link"><img src="../../files/aceitar.png" alt="" /> </Button>
         </div>
     </div>
