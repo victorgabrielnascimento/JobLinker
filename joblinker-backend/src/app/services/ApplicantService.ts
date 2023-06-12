@@ -26,7 +26,7 @@ export class ApplicantService {
             await this.userRepository.createUser(user);
 
             
-            return res.status(201).json({ message: `Usuário cadastrado com sucesso.`});
+            return res.status(201).json({ message: `Candidato cadastrado com sucesso.`});
         } catch (error) {
             console.error(error);
             return res.status(500).json({ message: 'Erro ao registrar candidato!', error: error });
@@ -36,9 +36,6 @@ export class ApplicantService {
     treatApplicant(applicant: IApplicant): IApplicant {
 
         applicant.id = uuidv4();
-        applicant.role = 1;
-        applicant.likes = 0;
-        applicant.max_likes = 5;
         applicant.experience.map((experience) => { experience.id = uuidv4(); experience.applicantCpfCnpj = applicant.cpf_cnpj; });
         applicant.idiomas.map((idioma) => { idioma.id = uuidv4(); });
         applicant.interesses.map((interesse) => { interesse.id = uuidv4(); });
@@ -50,12 +47,11 @@ export class ApplicantService {
         
         let user: IUser = {} as IUser;
 
-        user.id= uuidv4(),
-        user.role= 1,
-        user.email= applicant.email,
-        user.senha= applicant.senha,
-        user.cpf_cnpj= applicant.cpf_cnpj,
-        user.address= address
+        user.id= uuidv4();
+        user.email= applicant.email;
+        user.senha= applicant.senha;
+        user.cpf_cnpj= applicant.cpf_cnpj;
+        user.address= address;
         user.address.id = uuidv4();
 
         return user;

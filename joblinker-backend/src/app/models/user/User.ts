@@ -23,7 +23,9 @@ const User: ModelDefined<IUser, IUser> = sequelize.define('User', {
     },
     role : {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        defaultValue: 1
+
     }
 },
 {

@@ -29,7 +29,8 @@ export const Company: ModelDefined<ICompany, ICompany> = sequelize.define('Compa
     },
     role : {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        defaultValue: 3
     },
     area_atuacao : {
         type: DataTypes.STRING,
@@ -37,11 +38,13 @@ export const Company: ModelDefined<ICompany, ICompany> = sequelize.define('Compa
     },
     likes : {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        defaultValue: 0
     },
     max_likes : {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        defaultValue: 5
     }
 }, {
     tableName: 'company',

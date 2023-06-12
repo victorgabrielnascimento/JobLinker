@@ -42,11 +42,18 @@ const Applicant: ModelDefined<IApplicant, IApplicant> = sequelize.define('Applic
     },
     likes : {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        defaultValue: 0
     },
     max_likes : {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        defaultValue: 5
+    },
+    role : {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 2
     }
 }, {
     tableName: 'applicant'
