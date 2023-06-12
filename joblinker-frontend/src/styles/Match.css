@@ -145,6 +145,7 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    margin: 50px;
 }
 .login h1, .login h2{
     color: #ffff;
@@ -157,7 +158,7 @@
     border: none;
     border-bottom: 1px solid #fff;
     background-color: transparent;
-    margin: 10px;
+    margin: 5px;
 }
 .btns-login {
     display: flex;
@@ -171,4 +172,7 @@
     border: none;
     padding: 5px;
     margin: 10px;
+}
+.endereco input {
+    width: 20%;
 }
