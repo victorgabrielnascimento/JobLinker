@@ -3,6 +3,7 @@ require('dotenv').config();
 import "reflect-metadata";
 
 import express, { Request, Response, Express } from "express";
+import cors from 'cors';
 
 import ApplicantRouter from "./app/routes/applicant.route";
 import CompanyRouter from "./app/routes/company.route";
@@ -11,6 +12,7 @@ import ManagementRouter from "./app/routes/management.route";
 //connection
 const app: Express = express();
 app.use(express.json());
+app.use(cors());
 app.use(ApplicantRouter);
 app.use(CompanyRouter);
 app.use(ManagementRouter);

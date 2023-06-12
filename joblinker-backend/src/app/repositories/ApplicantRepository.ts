@@ -23,4 +23,9 @@ export class ApplicantRepository {
 
     }
 
+    async findApplicantByEmail(email: string): Promise<IApplicant> {
+        return await Applicant.findOne({ where: { email: email } });
+    }
+    
+
 }

@@ -9,20 +9,25 @@ import PerfilCandidato from './components/PerfilCandidato';
 import Login from './components/Login';
 import Cadastro from './components/Cadastro';
 
+import React, { useState } from 'react';
+
 
 function App() {
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+
   return (
     <div className="App">
       <Router>
-      <Superior></Superior>
-      <Routes>
-          <Route path="/login" element={<Login/>}></Route>
-          <Route path="/cadastro" element={<Cadastro/>}></Route>
-          <Route exact path="/" element={<Match/>}></Route>
-          <Route path="/chat" element={<Chat/>}></Route>
-          <Route path="/perfilcandidato" element={<PerfilCandidato/>}></Route>
-        </Routes>
-      <Menu></Menu>
+        <Superior></Superior>
+        <Routes>
+            <Route path="/login" element={<Login/>}></Route>
+            <Route path="/cadastro" element={<Cadastro/>}></Route>
+            <Route exact path="/" element={<Match/>}></Route>
+            <Route path="/chat" element={<Chat/>}></Route>
+            <Route path="/perfilcandidato" element={<PerfilCandidato/>}></Route>
+          </Routes>
+        <Menu></Menu>
       </Router>
     </div>
   );

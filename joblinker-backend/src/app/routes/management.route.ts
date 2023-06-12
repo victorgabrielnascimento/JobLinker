@@ -16,4 +16,8 @@ ManagementRouter.post('/management/like/register', (req: Request, res: Response)
     return new Promise<Response>((resolve) => (managementController.registerLike(req, res)).then(e => resolve(e)));
 });
 
+ManagementRouter.post('/management/login', (req: Request, res: Response): Promise<Response> => {
+    return new Promise<Response>((resolve) => (managementController.login(req, res)).then(e => resolve(e)));
+});
+
 export default ManagementRouter;
