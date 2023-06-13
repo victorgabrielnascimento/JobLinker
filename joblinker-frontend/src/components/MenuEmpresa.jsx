@@ -2,7 +2,7 @@ import { Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../styles/Menu.css";
 
-function Menu() {
+function MenuEmpresa() {
   return (
     <>
       <div className="menu">
@@ -11,21 +11,21 @@ function Menu() {
           <Nav>
             <Nav.Item>
               <Button variant="link">
-                <Link to="/chat2">
+                <Link to="/chat">
                   <img src="../../files/icon-chat.svg" alt="" />
                 </Link>
               </Button>
             </Nav.Item>
             <Nav.Item>
               <Button variant="link">
-                <Link to="/">
+                <Link to="/match">
                   <img src="../../files/icon-work.svg" alt="" />
                 </Link>
               </Button>
             </Nav.Item>
             <Nav.Item>
               <Button variant="link">
-                <Link to="/perfilcandidato">
+                <Link to="/perfilempresa">
                   <img src="../../files/icon-user.svg" alt="" />
                 </Link>
               </Button>
@@ -36,4 +36,4 @@ function Menu() {
     </>
   );
 }
-export default Menu;
+export default MenuEmpresa;

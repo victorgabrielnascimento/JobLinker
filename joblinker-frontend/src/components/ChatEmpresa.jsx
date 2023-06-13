@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../styles/Match.css";
 
-function Chat() {
+function ChatEmpresa() {
   return (
     <>
       <div className="match">
@@ -14,19 +14,20 @@ function Chat() {
             <Card.Title>
               <span className="name-user">User Name</span>
               <div className="img-user">
-                <img src="../../files/a.png" alt="" />
+                <img src="../../files/icon1.png" alt="" />
               </div>
             </Card.Title>
             <Card.Text>
               <div className="mensagens">
-                <div className="mensagem-1">Boa noite</div>
                 <div className="mensagem-2">Boa noite</div>
-                <div className="mensagem-1">Gostei muito do seu perfil</div>
-                <div className="mensagem-2">Formação acadêmica</div>
-                <div className="mensagem-1">Formação acadêmica</div>
-                <div className="mensagem-2">Formação acadêmica</div>
-                <div className="mensagem-1">Formação acadêmica</div>
-                <div className="mensagem-2">Formação acadêmica</div>
+                <div className="mensagem-1">Boa noite</div>
+                <div className="mensagem-2">
+                  Ficamos interessados no seu perfil
+                </div>
+                <div className="mensagem-1">Sério? Fico feliz em saber</div>
+                <div className="mensagem-2">Agendaremos uma entrevista</div>
+                <div className="mensagem-1">Perfeito! Fico no aguardo</div>
+                <div className="mensagem-2">Logo vou informa-la melhor!</div>
               </div>
               <div className="input-msg">
                 <textarea
@@ -35,7 +36,7 @@ function Chat() {
                   cols="27"
                   rows="1"
                 ></textarea>
-                <button type="submit"> Enviar</button>
+                <button type="submit">Enviar</button>
               </div>
             </Card.Text>
           </Card.Body>
@@ -44,4 +45,4 @@ function Chat() {
     </>
   );
 }
-export default Chat;
+export default ChatEmpresa;

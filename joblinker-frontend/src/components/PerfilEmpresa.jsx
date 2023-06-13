@@ -3,7 +3,7 @@ import "../styles/Match.css";
 import MenuEmpresa from "./MenuEmpresa";
 import Button from "react-bootstrap/Button";
 
-function PerfilCandidato() {
+function PerfilEmpresa() {
   return (
     <>
       <div className="match">
@@ -15,19 +15,30 @@ function PerfilCandidato() {
             <Card.Title>
               <span className="name-user">User Name</span>
               <div className="img-user-perfil">
-                <img src="../../files/a.png" alt="" />
+                <img src="../../files/icon1.png" alt="" />
               </div>
             </Card.Title>
             <Card.Text>
-              <div>Formação acadêmica</div>
-              <div>Descrição</div>
-              <div>Qualidades</div>
-              <div>Idade</div>
-              <div>Experiência</div>
-              <div>Cursos</div>
-              <div>Hobbies</div>
+              <div class="Description">
+                <h1>
+                  Walmart é uma empresa integra e única, com mais de 10.000
+                  lojas espalhadas pelo mundo, somos um destaque no ramo de
+                  vendas.
+                </h1>
+              </div>
+              <div class="Description">
+                <h2>
+                  Estamos em busca de profissionais para todas as áreas da nossa
+                  empresa.
+                </h2>
+              </div>
+              <div class="Description">
+                <h2>
+                  Estamos buscando profissionais para a nova loja de Curitiba-PR
+                </h2>
+              </div>
               <div class="config">
-                <a href="/pro">
+                <a href="/pro2">
                   <Button className="super-like" variant="link">
                     <img src="../../files/superlike.png" alt="" />
                   </Button>
@@ -46,4 +57,4 @@ function PerfilCandidato() {
     </>
   );
 }
-export default PerfilCandidato;
+export default PerfilEmpresa;

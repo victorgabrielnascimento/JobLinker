@@ -1,174 +1,206 @@
 .match {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #2C214A;
-    width: 497px;
-    height: 100vh;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c214a;
+  width: 497px;
+  height: 100vh;
+  justify-content: center;
 }
 
 .img-user {
-    width: 120px;
-    height: 120px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
-    border-radius: 10%;
-    position: absolute;
-    top: -60px;
-    left: 110px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+  border-radius: 10%;
+  position: absolute;
+  top: -60px;
+  left: 110px;
 }
 .img-user img {
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    border-radius: 10%;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 10%;
 }
 .img-user-perfil {
-    width: 120px;
-    height: 120px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
-    border-radius: 10%;
-    position: absolute;
-    top: -50px;
-    left: 115px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+  border-radius: 10%;
+  position: absolute;
+  top: -50px;
+  left: 115px;
 }
 .img-user-perfil img {
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    border-radius: 10%;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 10%;
 }
 
 .card-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .card-text {
-    font-size: 19px;
-    margin-top: 20px;
+  font-size: 19px;
+  margin-top: 20px;
 }
 
 .card-candidato {
-   background-image: linear-gradient(to bottom, #3C1856, #3E195A, #3B1859, #3B185C, #2C214A, #2C214A);
-    color: #ffff;
-    box-shadow: 0px 0px 20px #0000006c;
-    border: none;
+  background-image: linear-gradient(
+    to bottom,
+    #3c1856,
+    #3e195a,
+    #3b1859,
+    #3b185c,
+    #2c214a,
+    #2c214a
+  );
+  color: #ffff;
+  box-shadow: 0px 0px 20px #0000006c;
+  border: none;
 }
 .card-candidato .card-body {
-    text-align: start;
+  text-align: center;
 }
 .perfil-user {
-    position: absolute;
-    bottom: 0;
-    right: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 25px;
 }
 .name-user {
-    font-size: 30px;
-    max-width: 100px;
-    flex-wrap: wrap;
-    display: flex;
-    margin-top: 50px;
+  font-size: 30px;
+  max-width: 100px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
 }
 .btn-match {
-    width: 22vw;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
+  width: 22vw;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 .super-like {
-    position: relative;
-    bottom: -50px;
+  position: relative;
+  bottom: -50px;
 }
 .btn-back {
-    width: 25rem;
-    margin-bottom: 5px;
+  width: 25rem;
+  margin-bottom: 5px;
 }
 
 .mensagem-1 {
-    background-color: #1e104588;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.01);
-    padding: 7px;
-    border-radius: 10px;
-    height: 4vh;
-    margin: 6px 0 6px 100px;
-    max-width: 80%;
-    font-size: 13px;
-   display: flex;
-   align-items: center;
-   justify-content: start;
-
+  background-color: #1e104588;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.01);
+  padding: 7px;
+  border-radius: 10px;
+  height: 4vh;
+  margin: 6px 0 6px 100px;
+  max-width: 80%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 .mensagem-2 {
-    background-color: #ffffff4f;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.01);
-    padding: 7px;
-    border-radius: 10px;
-    height: 4vh;
-    margin: 6px 100px 6px 0;
-    max-width: 80%;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    
+  background-color: #ffffff4f;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.01);
+  padding: 7px;
+  border-radius: 10px;
+  height: 4vh;
+  margin: 6px 100px 6px 0;
+  max-width: 80%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .input-msg {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: 0;
-    margin: 10px 0 10px 0;
-    z-index: 10;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0 10px 0;
+  z-index: 10;
 }
 .input-msg button {
-    background-color:#6500bc ;
-    border: none;
-    color: #fff;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  background-color: #6500bc;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .input-msg textarea {
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .login {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
-.login h1, .login h2{
-    color: #ffff;
+.login h1,
+.login h2 {
+  color: #ffff;
 }
 .inputs-login {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .inputs-login input {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: transparent;
-    margin: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  margin: 10px;
 }
 .btns-login {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .login button {
-    background-image: linear-gradient(to right,#3C1856, #6500bc);
-    color: #ffff;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-    margin: 10px;
+  background-image: linear-gradient(to right, #3c1856, #6500bc);
+  color: #ffff;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  margin: 10px;
+}
+.login a {
+  width: 100%;
+}
+
+.Description {
+  text-align: center;
+}
+
+.Description h1 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.Description h2 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.config {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

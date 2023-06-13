@@ -1,12 +1,12 @@
 .menu {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
-.nav{
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+.nav {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
