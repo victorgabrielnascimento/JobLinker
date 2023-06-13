@@ -17,7 +17,7 @@ export const Company: ModelDefined<ICompany, ICompany> = sequelize.define('Compa
     },
     telefone : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     email : {
         type: DataTypes.STRING,
@@ -34,7 +34,7 @@ export const Company: ModelDefined<ICompany, ICompany> = sequelize.define('Compa
     },
     area_atuacao : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     likes : {
         type: DataTypes.INTEGER,
