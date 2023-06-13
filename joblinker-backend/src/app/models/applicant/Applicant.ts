@@ -18,15 +18,15 @@ const Applicant: ModelDefined<IApplicant, IApplicant> = sequelize.define('Applic
     },
     telefone : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     cargo_pretendido : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     pretensao_salarial : {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     sobre_mim : {
         type: DataTypes.STRING,
@@ -34,7 +34,7 @@ const Applicant: ModelDefined<IApplicant, IApplicant> = sequelize.define('Applic
     },
     formacao_academica : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     url_foto : {
         type: DataTypes.STRING,
