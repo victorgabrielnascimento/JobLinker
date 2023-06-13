@@ -48,6 +48,7 @@ export class ApplicantService {
         let user: IUser = {} as IUser;
 
         user.id= uuidv4();
+        user.role= 2;
         user.email= applicant.email;
         user.senha= applicant.senha;
         user.cpf_cnpj= applicant.cpf_cnpj;

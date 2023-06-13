@@ -10,11 +10,11 @@ const Idiomas: ModelDefined<IIdiomas, IIdiomas> = sequelize.define('Idiomas', {
     },
     nome : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     nivel : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     }
 }, {
     tableName: 'idiomas',

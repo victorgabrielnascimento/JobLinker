@@ -10,7 +10,7 @@ const Interesses: ModelDefined<IInteresses, IInteresses> = sequelize.define('Int
     },
     nome : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     }
 }, {
     tableName: 'interesses',

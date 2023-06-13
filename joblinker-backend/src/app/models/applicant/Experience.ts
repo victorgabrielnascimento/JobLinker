@@ -10,19 +10,19 @@ const Experience: ModelDefined<IExperience, IExperience> = sequelize.define('Exp
     },
     nome_empresa : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     funcao : {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     data_inicio : {
         type: DataTypes.DATE,
-        allowNull: false
+        allowNull: true
     },
     data_fim : {
         type: DataTypes.DATE,
-        allowNull: false
+        allowNull: true
     }
 },
 {
