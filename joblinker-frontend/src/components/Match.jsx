@@ -5,11 +5,12 @@ import "../styles/Match.css";
 
 function Match() {
   const [perfilIndex, setPerfilIndex] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
 
   const perfis = [
     {
-      name: "Walmart",
-      imgSrc: "../../files/icon1.png",
+      name: "Ambev",
+      imgSrc: "../../files/ambev.png",
       academicFormation: "Formação acadêmica",
       description: "Vaga",
       qualities: "Requerimentos",
@@ -30,8 +31,8 @@ function Match() {
       hobbies: "Benefícios",
     },
     {
-      name: "   Meta",
-      imgSrc: "../../files/Meta.png",
+      name: "   Walmart",
+      imgSrc: "../../files/icon1.png",
       academicFormation: "Formação acadêmica",
       description: "Vaga",
       qualities: "Requerimentos",
@@ -41,8 +42,8 @@ function Match() {
       hobbies: "Benefícios",
     },
     {
-      name: "Ambev",
-      imgSrc: "../../files/Ambev.png",
+      name: "meta",
+      imgSrc: "../../files/Meta.png",
       academicFormation: "Formação acadêmica",
       description: "Vaga",
       qualities: "Requerimentos",
@@ -54,14 +55,44 @@ function Match() {
   ];
 
   const handleNextProfile = () => {
+    if (perfilIndex === 2) {
+      setShowPopup(true);
+    } else {
+      setPerfilIndex((prevIndex) => (prevIndex + 1) % perfis.length);
+    }
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
     setPerfilIndex((prevIndex) => (prevIndex + 1) % perfis.length);
   };
 
   const perfilAtual = perfis[perfilIndex];
 
+  const Popup = () => {
+    return (
+      <div className="popup">
+        <div className="popup-content">
+          <img
+            src="../../files/glow-removebg-preview.png"
+            alt="logo"
+            style={{ width: "22rem" }}
+          />
+          <div class="btnpop">
+            <Button onClick={handleClosePopup}>LETS CHAT</Button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
-      <div className="match">
+      <div
+        className={`match ${
+          showPopup && perfilIndex === 2 ? "popup-open" : ""
+        }`}
+      >
         <Card className="card-candidato" style={{ width: "22rem" }}>
           <Card.Body>
             <Card.Title>
@@ -96,6 +127,7 @@ function Match() {
           </Button>
         </div>
       </div>
+      {showPopup && perfilIndex === 2 && <Popup />}
     </>
   );
 }

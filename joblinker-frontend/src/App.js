@@ -27,11 +27,11 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/cadastro" element={<Cadastro />}></Route>
           <Route exact path="/" element={<Match />}></Route>
-          <Route exact path="/match" element={<MatchEmpresa />}></Route>
+          <Route exact path="/2" element={<MatchEmpresa />}></Route>
           <Route path="/chat" element={<Chat />}></Route>
           <Route path="/chat2" element={<ChatEmpresa />}></Route>
           <Route path="/perfilcandidato" element={<PerfilCandidato />}></Route>
-          <Route path="/perfilempresa" element={<PerfilEmpresa />}></Route>
+          <Route path="/perfil2" element={<PerfilEmpresa />}></Route>
           <Route path="/pro" element={<Pro />}></Route>
           <Route path="/pro2" element={<ProEmpresa />}></Route>
         </Routes>

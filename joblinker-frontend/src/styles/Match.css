@@ -63,35 +63,35 @@
     #2c214a,
     #2c214a
   );
+  border: none;
   color: #ffff;
   box-shadow: 0px 0px 20px #0000006c;
-  border: none;
 }
 .card-candidato .card-body {
   text-align: center;
 }
 .perfil-user {
-  position: absolute;
   bottom: 0;
   right: 25px;
+  position: absolute;
 }
 .name-user {
-  font-size: 30px;
-  max-width: 100px;
-  flex-wrap: wrap;
   display: flex;
+  font-size: 30px;
+  flex-wrap: wrap;
+  max-width: 100px;
   margin-top: 50px;
   text-align: center;
 }
 .btn-match {
+  gap: 5px;
   width: 22vw;
   display: flex;
   justify-content: center;
-  gap: 5px;
 }
 .super-like {
-  position: relative;
   bottom: -50px;
+  position: relative;
 }
 .btn-back {
   width: 25rem;
@@ -99,46 +99,46 @@
 }
 
 .mensagem-1 {
+  height: 4vh;
+  padding: 7px;
+  display: flex;
+  max-width: 80%;
+  font-size: 13px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: start;
+  margin: 6px 0 6px 100px;
   background-color: #1e104588;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.01);
-  padding: 7px;
-  border-radius: 10px;
-  height: 4vh;
-  margin: 6px 0 6px 100px;
-  max-width: 80%;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
 }
 .mensagem-2 {
-  background-color: #ffffff4f;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.01);
-  padding: 7px;
-  border-radius: 10px;
   height: 4vh;
-  margin: 6px 100px 6px 0;
+  padding: 7px;
+  display: flex;
   max-width: 80%;
   font-size: 13px;
-  display: flex;
+  border-radius: 10px;
   align-items: center;
   justify-content: start;
+  margin: 6px 100px 6px 0;
+  background-color: #ffffff4f;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.01);
 }
 
 .input-msg {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
   bottom: 0;
-  margin: 10px 0 10px 0;
   z-index: 10;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin: 10px 0 10px 0;
 }
 .input-msg button {
-  background-color: #6500bc;
   border: none;
   color: #fff;
   border-radius: 10px;
   border-top-left-radius: 0;
+  background-color: #6500bc;
   border-bottom-left-radius: 0;
 }
 
@@ -149,10 +149,10 @@
 }
 
 .login {
-  display: flex;
-  flex-direction: column;
   gap: 60px;
   margin: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .login h1,
 .login h2 {
@@ -164,9 +164,9 @@
 }
 .inputs-login input {
   border: none;
-  border-bottom: 1px solid #fff;
-  background-color: transparent;
   margin: 5px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
 }
 .btns-login {
   display: flex;
@@ -174,12 +174,12 @@
 }
 
 .login button {
-  background-image: linear-gradient(to right, #3c1856, #6500bc);
-  color: #ffff;
-  border-radius: 10px;
   border: none;
   padding: 5px;
   margin: 10px;
+  color: #ffff;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #3c1856, #6500bc);
 }
 .endereco input {
   width: 20%;
@@ -208,4 +208,53 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.popup-open {
+  z-index: 9999;
+  position: relative;
+}
+
+.popup {
+  top: 50%;
+  left: 50%;
+  width: 28%;
+  height: 50vh;
+  display: flex;
+  color: #fff;
+  position: fixed;
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999999999999999;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to right, #3c1856, #6500bc);
+}
+
+.popup-content {
+  display: flex;
+  margin-top: -10%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btnpop {
+  margin-top: -20%;
+}
+
+.btnpop button {
+  border: solid 3px #fff;
+  background-image: linear-gradient(to right, #3c1856, #6500bc);
+}
+
+.btnpro button {
+  border: solid 3px #fff;
+  background-image: linear-gradient(to right, #3c1856, #6500bc);
+}
+
+.btnpro button:hover {
+  font-weight: 500;
+  color: blueviolet;
+  border: solid 3px #6500bc;
 }

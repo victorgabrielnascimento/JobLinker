@@ -31,6 +31,10 @@ function Pro() {
                 </p>
                 <p>Você tem o perfil em recomendado no JobLinker</p>
               </div>
+
+              <div class="btnpro">
+                <Button>Tornar-se Membro</Button>
+              </div>
             </Card.Text>
           </Card.Body>
         </Card>

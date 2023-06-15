@@ -34,6 +34,10 @@ function ProEmpresa() {
                   JobLinker
                 </p>
               </div>
+
+              <div class="btnpro">
+                <Button>Tornar-se Membro</Button>
+              </div>
             </Card.Text>
           </Card.Body>
         </Card>

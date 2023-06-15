@@ -11,14 +11,14 @@ function MatchEmpresa() {
             <Card.Title>
               <span className="name-user w-100">User Name</span>
               <div className="img-user">
-                <img src="../../files/icon1.png" alt="" />
+                <img src="../../files/a.png" alt="" />
               </div>
             </Card.Title>
             <Card.Text>
-              <div>Tipo de Vaga</div>
-              <div>Descrição da função</div>
-              <div>Localidade</div>
-              <div>Exigências</div>
+              <div>Experiência</div>
+              <div>Formação</div>
+              <div>Qualidades</div>
+              <div>Hobbies</div>
             </Card.Text>
             <Button className="perfil-user" variant="link">
               {" "}
